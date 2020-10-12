@@ -8,26 +8,70 @@ Trident
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        body:before{
+            content: '';
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("logo.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-filter: blur(10px);
+            -moz-filter: blur(10px);
+            -o-filter: blur(10px);
+            -ms-filter: blur(10px);
+            filter: blur(10px);
+        }
+        .trans
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 1000px;
+            height: 700px;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            background: rgba(0,0,0,.5);
+        }
+        .trans h2 {
+            margin: 0;
+            padding: 0 0 20px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+    </style>
 </HEAD>
-<BODY style="background-color:black;">
+<BODY style="background-color:white;">
 
 
+<div class="trans">
+        <h2><img src="doenlo.jpg" style="width:50%;height:30%;border-radius: 3%;"></h2>
+        <h2><Button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><i class = "fa fa-Download"></i>  Download APK</Button></h2>
+        
+  </div>
 
-<DIV class = "container">
+<DIV class = "container-fluid">
     <Div class="row">
-        <div class = "col-md-5 col-sm-12  col-12 col-xs-5 ">
-            <Button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm"><i class = "fa fa-Download"></i>  Download APK</Button>
+        <div class = "col-md-6  col-12 col-xs-12 ">
+            
         </div>
-        <div class = "col-md-2 col-xs-2 ">
-        </div>
-        <div class = "col-md-5 col-sm-12  col-12 col-xs-5 ">
-            <img src = "abc.jpg" style="width:500px;height:800px">
+        <div class = "col-md-6  col-12 col-xs-12 ">
         </div>
     </div>
 </div>
 
-<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
       <div class="modal-header">
